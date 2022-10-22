@@ -4,8 +4,15 @@ public class A14_fibonnaci {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter number of elements");
-        new fibo(s.nextInt());
+        int no = s.nextInt();
+        // new fibo(no);
         s.close();
+        // With constants
+        double a = 1.6180339887;
+        double b = 2.2360679775;
+        for (int i = 0; i < no; i++) {
+            System.out.println(Math.round(Math.pow(a, i) / b));
+        }
     }
 }
 
