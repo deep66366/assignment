@@ -16,12 +16,11 @@ class C extends B {
     }
 }
 
-public class A22_MuliLevel {
+public class A22_MultiLevel {
     public static void main(String args[]) {
         C obj = new C();
         obj.a();
         obj.b();
         obj.c();
     }
-
 }

@@ -12,7 +12,7 @@ class Shapes {
 
 class Triangle extends Shapes {
     void area(int h, int b) {
-        area = (h * b) / 2; // This is overrided area method with two parameter
+        area = (h * b) / 2.0f; // This is overrided area method
     }
 }
 
@@ -22,7 +22,10 @@ public class A26_overloading_vs_overriding {
         Shapes rec = new Shapes();
         Triangle tri = new Triangle();
         squ.area(3);
+        System.out.println("Area of square is " + squ.area);
         rec.area(3, 5);
+        System.out.println("Area of rectangle is " + rec.area);
         tri.area(3, 5);
+        System.out.println("Area of triangle is " + tri.area);
     }
 }

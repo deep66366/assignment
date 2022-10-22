@@ -13,14 +13,16 @@ class Vehicle {
 }
 
 class Bike extends Vehicle {
-    Bike() {
+    Bike(int a) {
         super(50);
+        this.speed = a;
         System.out.println("Bike is created");
+        System.out.println("Now Vehicle speed = " + speed);
     }
 }
 
 public class A24_this_and_super {
     public static void main(String args[]) {
-        new A24_this_and_super();
+        new Bike(40);
     }
 }
