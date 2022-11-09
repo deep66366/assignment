@@ -10,7 +10,7 @@ public class A16_17_Reverse {
             temp = m % 10;
             rev = rev * 10 + temp;
             sum = sum + temp;
-            m = m / 0;
+            m = m / 10;
         }
         System.out.println("The Reverse of number=" + rev);
         System.out.println("The sum of digits=" + sum);
