@@ -1,6 +1,6 @@
 package packages;
 
-class AcessModifiers{
+public class AcessModifiers{
     private String a = "Private is accessible";
     protected String b = "Protected is accessible";
     String c = "Default is accessible";
