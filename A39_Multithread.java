@@ -1,32 +1,32 @@
-class InnerMultithread_1 extends Thread {
+class thread_1 extends Thread {
 
     public void run() {
         System.out.println("This is the thread InnerMultithread_1 ");
     }
 }
 
-class InnerMultithread_2 extends Thread {
+class thread_2 extends Thread {
 
     public void run() {
         System.out.println("This is the thread InnerMultithread_2 ");
     }
 }
 
-class InnerMultithread_3 extends Thread {
+class thread_3 extends Thread {
 
     public void run() {
         System.out.println("This is the thread InnerMultithread_3 ");
     }
 }
 
-class InnerMultithread_4 extends Thread {
+class thread_4 extends Thread {
 
     public void run() {
         System.out.println("This is the thread InnerMultithread_4 ");
     }
 }
 
-class InnerMultithread_5 implements Runnable {
+class thread_5 implements Runnable {
 
     public void run() {
         System.out.println("This is the thread InnerMultithread_5 made using the runnable interface  ");
@@ -36,11 +36,11 @@ class InnerMultithread_5 implements Runnable {
 
 class A39_Multithread {
     public static void main(String[] args) {
-        InnerMultithread_1 obj1 = new InnerMultithread_1();
-        InnerMultithread_2 obj2 = new InnerMultithread_2();
-        InnerMultithread_3 obj3 = new InnerMultithread_3();
-        InnerMultithread_4 obj4 = new InnerMultithread_4();
-        InnerMultithread_5 refr = new InnerMultithread_5();
+        thread_1 obj1 = new thread_1();
+        thread_2 obj2 = new thread_2();
+        thread_3 obj3 = new thread_3();
+        thread_4 obj4 = new thread_4();
+        thread_5 refr = new thread_5();
         Thread obj5 = new Thread(refr);
         obj1.setPriority(5);
         obj2.setPriority(4);
