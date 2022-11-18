@@ -24,8 +24,8 @@ class Spider extends Animal implements CanClimb {
     }
 }
 
-class Test {
-    static void main(String[] args) {
+public class A28_abstract_and_interface {
+    public static void main(String[] args) {
         Cat cat = new Cat();
         cat.makeSound();
         Spider spider = new Spider();
