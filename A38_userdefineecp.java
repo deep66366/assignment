@@ -6,7 +6,7 @@ class MyException extends Exception {
 
 public class A38_userdefineecp {
 
-    static void validate(int age) throws MyException {
+    static void validate(int age) throws Exception {
         if (age < 18)
             throw new MyException("not valid");
         else
